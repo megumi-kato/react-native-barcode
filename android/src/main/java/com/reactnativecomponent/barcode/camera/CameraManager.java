@@ -138,7 +138,10 @@ private final Context context;
    */
   public void openDriver(SurfaceTexture surfaceTexture) throws IOException {
     if (camera == null) {
-      camera = Camera.open();
+      camera = Camera.open(1);
+      if (camera == null) {
+        camera = Camera.open();
+      }
       if (camera == null) {
         throw new IOException();
       }

@@ -86,7 +86,7 @@ private static final int DESIRED_SHARPNESS = 30;
     //setSharpness(parameters);
 //    parameters.set("orientation", "portrait");
     if (Integer.parseInt(Build.VERSION.SDK) >= 8) {
-        setDisplayOrientation(camera, 90);
+        // setDisplayOrientation(camera, 90);
         } 
         camera.setParameters(parameters);
       }
